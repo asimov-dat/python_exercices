@@ -14,14 +14,10 @@ cat3 = Cat('lupita', 4)
 
 # 2 Create a function that finds the oldest cat
 
-ages = [cat2, cat1, cat3]
-ages.sort()
-print(ages[-1])
-
-def oldestCat(self,cat1,cat2,cat3):
-    ages = [cat1.age, cat2.age, cat3.age]
-    ages.sort()
+def oldestCat(*args):
+    return max(args)
 
 
 
 # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
+print(f'The oldest cat is {oldestCat(cat1.age,cat2.age,cat3.age)} years old')
