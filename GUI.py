@@ -8,11 +8,13 @@ picture = [
   [0,0,0,1,0,0,0],
   [0,0,0,1,0,0,0]
 ]
-i=0
-for row in picture:
-    while i < len(picture):
-        print(row)
-        break
-    i+=1
+row=0
+while row < len(picture):
+  for item in picture[row]:
+    if (item):
+      print('O', end=' ')
+    else:
+      print('.', end=' ')
+  print()
+  row+=1
 
-print(len(picture))
