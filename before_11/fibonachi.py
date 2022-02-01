@@ -35,8 +35,10 @@ def fib_list(num):
         fiblist.append(i)
     return fiblist
 
-call_fib(2,20)
-print(fibonachi2(20))
+
+if __name__ == '__naim__':
+    call_fib(2,20)
+    print(fibonachi2(20))
 
 
 
